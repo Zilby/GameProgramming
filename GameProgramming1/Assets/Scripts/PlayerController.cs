@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// Controls the player character
+
 public class PlayerController : MonoBehaviour {
 
 	public float speed;
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
+    // Sets the count text
 	void setCountText () {
 		countText.text = "Count: " + count.ToString ();
 	}

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Controls the light/pickups
+
 public class Pickup : MonoBehaviour {
 
 	// Use this for initialization
@@ -14,7 +16,8 @@ public class Pickup : MonoBehaviour {
 		
 	}
 
-	void OnTriggerEnter(Collider col) {
+    // tells them to destroy themselves on impact
+    void OnTriggerEnter(Collider col) {
 		Destroy (gameObject);
 	}
 }
